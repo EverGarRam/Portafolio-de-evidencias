@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saludo</title>
+    <script>
+        //Este es un comentario de una sola linea 
+        document.write("Hola");
+        /*
+        Linea dos comenta 
+        2 maneras de poner un comentario
+        */
+        // var, let y cost
+        var nombre;
+        var resultado; 
+        function saludar(){
+            nombre=document.getElementById ("nombre").value;
+            resultado="Bienvenido" + nombre;
+            document.getElementById("res").innerHTML=resultado;
+
+        }
+    </script>
+</head>
+<body>
+    <input type="text" name="nombre" id="nombre">
+    <button id="bthsaludar" onclick="saludar()">Saludar</button>
+    <label id="res"></label>
+</body>
+</html>
